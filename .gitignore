@@ -1,0 +1,10 @@
+target/
+node_modules/
+.env
+.env.*
+*.key
+*credentials*
+near_*.json
+payload*.json
+PLAN.md
+RULES-NOTES.md
