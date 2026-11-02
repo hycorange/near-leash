@@ -121,5 +121,7 @@ docs                  testnet results, attack demo log, dashboard screenshot
 The dashboard uses no third-party front-end code. All code in this repository was written during the
 hackathon window (from 2026-11-01); there is no pre-hackathon baseline.
 
+Built with AI-assisted coding tools; all code was reviewed and tested by the author.
+
 ## License
 MIT. See [LICENSE](LICENSE).
