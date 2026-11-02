@@ -1,0 +1,18 @@
+{
+  "network": "testnet",
+  "owner": "leash-owner-k21owo.testnet",
+  "registry": "leash-registry-k21owo.testnet",
+  "vault": "leash-vault-k21owo.testnet",
+  "agent_function_call_key": "ed25519:GyEtJ2PAcJgkUMefgw5xHtsPZwSacji5UpT7BpzvPgcy",
+  "simulated_bad_actor": "leash-drainer-k21owo.testnet",
+  "trusted_receiver": "leash-dev-611136.testnet",
+  "setup_txs": {
+    "deploy_registry": "9D9ejgKmnhnRW585Zdw7nL8U3oV8DQiL3EDndtVzN4ia",
+    "deploy_vault": "7ioEYDpzkNfNHqrn7SCzJSUVZDSuqQnhEHHM8YJ1HSYb",
+    "add_agent_fc_key": "5RWmjvmtPYEkddaW1epyP8PrMjjLuES6Ln4qWKTjrfT2",
+    "report_drainer": "5yentDNmdwyb4G6BLPhU4dw1umJ5fmiW2TarmHyXh4Qo",
+    "confirm_drainer": "4pTQpw9Reom2JVGsRZdXPHuMBSxAuuAGizfaoV62j3Hg",
+    "trust_shop": "9Ru7gkSE3Erv8ATPx1kt6yrvEFuQGx9u8DEwqnw2knDs"
+  },
+  "flagged": true
+}
