@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leash: owner dashboard</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https:; style-src 'self'; script-src 'self'; img-src 'self' data:">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Leash <span class="muted">owner dashboard</span></h1>
+    <p class="muted">Read-only view of an agent vault on NEAR testnet. Owner actions are shown as
+      <code>near</code> CLI commands to run in your own terminal. This page never asks for a key or seed phrase.</p>
+    <p><button id="refresh" type="button">refresh</button> <span id="status" class="muted"></span></p>
+  </header>
+  <main>
+    <section>
+      <h2>Vault</h2>
+      <dl>
+        <dt>vault</dt><dd id="vault-id"></dd>
+        <dt>owner</dt><dd id="owner-id"></dd>
+        <dt>registry</dt><dd id="registry-id"></dd>
+        <dt>balance</dt><dd id="balance"></dd>
+        <dt>per-payment cap</dt><dd id="cap"></dd>
+        <dt>owner review above</dt><dd id="review"></dd>
+        <dt>review first-time receivers</dt><dd id="newrecv"></dd>
+      </dl>
+      <div class="bar"><div id="budget-bar"></div></div>
+      <p id="budget" class="muted"></p>
+      <details><summary>Emergency stop</summary><div id="pause-cmd"></div></details>
+    </section>
+    <section>
+      <h2>Waiting for approval</h2>
+      <table><thead><tr><th>id</th><th>receiver</th><th>amount</th><th>why queued</th><th>action</th></tr></thead>
+        <tbody id="pending"></tbody></table>
+    </section>
+    <section>
+      <h2>Keys on the vault account</h2>
+      <ul id="keys"></ul>
+    </section>
+    <section>
+      <h2>Shared registry: flagged accounts</h2>
+      <p id="reg-meta" class="muted"></p>
+      <table><thead><tr><th>account</th><th>reports</th><th>status</th></tr></thead><tbody id="flagged"></tbody></table>
+    </section>
+    <section>
+      <h2>Look up a receiver</h2>
+      <form id="lookup"><input id="lookup-id" placeholder="account.testnet" autocomplete="off" spellcheck="false"> <button>check</button></form>
+      <div id="lookup-out"></div>
+    </section>
+  </main>
+  <footer class="muted">Leash · MIT · <a href="https://github.com/hycorange/near-leash">source</a></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
