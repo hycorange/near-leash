@@ -1,0 +1,34 @@
+{
+  "vault": "leash-vault-k21owo.testnet",
+  "registry": "leash-registry-k21owo.testnet",
+  "trusted_names": [
+    "leash-dev-611136.testnet"
+  ],
+  "recorded_at": "2026-11-02T09:31:00.395Z",
+  "cases": [
+    [
+      "leash-drainer-k21owo.testnet",
+      "0.05"
+    ],
+    [
+      "leash-dev-611136.testnet",
+      "0.05"
+    ],
+    [
+      "wrap.testnet",
+      "0.05"
+    ],
+    [
+      "leash-dev-61l136.testnet",
+      "0.05"
+    ],
+    [
+      "no-such-account-leash-7q.testnet",
+      "0.05"
+    ],
+    [
+      "leash-dev-611136.testnet",
+      "2"
+    ]
+  ]
+}

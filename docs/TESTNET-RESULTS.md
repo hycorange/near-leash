@@ -54,3 +54,14 @@ Reproduce: `node scripts/setup-testnet.mjs` then `node scripts/prove-agent-key.m
 - A function-call key can't transfer, add or delete keys, deploy, or attach deposits. It can call only the listed methods on one receiver.
 - Its allowance pays only for gas. When the allowance runs out, the agent is locked out until the owner adds a new key. That is a safe failure, but it does stop the agent.
 - The vault account still has one full-access key. It is held by the human (owner), and the agent never sees it.
+
+## Run 3: fixed script, first-time-receiver queue path
+The script now picks a receiver the vault has not paid yet. Output is in `deployments/prove-agent-key-run3.json`. All 12 checks passed.
+
+| Attempt | Result | Tx |
+| --- | --- | --- |
+| pay 0.1 NEAR to first-time receiver `leash-registry-k21owo.testnet` | QUEUED id=1 (no funds moved) | [9zmRr6Y1…](https://testnet.nearblocks.io/txns/9zmRr6Y1t6pdfvT2dKqKjndYC8AEm1STb339rWLwLTMu) |
+| owner `approve(1)` (registry re-checked) | SENT | [CdCv7gbh…](https://testnet.nearblocks.io/txns/CdCv7gbhFncB1X7HeGL8P1QbPd3SpKRd8sMtfQw9KnJA) |
+| pay 0.05 NEAR to trusted receiver | SENT | [4vSK2ohA…](https://testnet.nearblocks.io/txns/4vSK2ohAMLyWEVFHyYNGEivKLioHxGbo7owXoq4365tm) |
+| pay 0.05 NEAR to flagged drainer | BLOCKED (registry) | [4P1CFWar…](https://testnet.nearblocks.io/txns/4P1CFWar3XCBvdV4ZECE68PP3KwGQjobWRT8wxpGn3dE) |
+| pay 2 NEAR | BLOCKED (cap) | [DQoG8b38…](https://testnet.nearblocks.io/txns/DQoG8b38uXS3HhrYEG4sTrDFitN82SeoMAzp1MJrBYW5) |

@@ -477,4 +477,25 @@ mod tests {
         ctx("vault.testnet");
         v.on_registry_check(acc("a.testnet"), NearToken::from_millinear(100), "x".into(), Err(PromiseError::Failed));
     }
+
+    #[test]
+    fn budget_resets_after_24h() {
+        let mut v = setup();
+        v.trust(acc("a.testnet"));
+        ctx("vault.testnet");
+        let _ = v.pay(acc("a.testnet"), NearToken::from_millinear(1000), "1".into());
+        let _ = v.pay(acc("a.testnet"), NearToken::from_millinear(1000), "2".into());
+        assert_eq!(v.spent_in_window(), NearToken::from_near(2));
+        let mut b = VMContextBuilder::new();
+        b.current_account_id(acc("vault.testnet"))
+            .predecessor_account_id(acc("vault.testnet"))
+            .account_balance(NearToken::from_near(10))
+            .block_timestamp(DAY_NS + 1);
+        testing_env!(b.build());
+        assert_eq!(v.spent_in_window(), NearToken::from_yoctonear(0));
+        assert!(matches!(
+            unwrap(v.pay(acc("a.testnet"), NearToken::from_millinear(400), "3".into())),
+            PayOutcome::Sent { .. }
+        ));
+    }
 }

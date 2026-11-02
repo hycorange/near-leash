@@ -1,0 +1,126 @@
+{
+  "when": "2026-11-02T09:28:49.675Z",
+  "vault": "leash-vault-k21owo.testnet",
+  "agent_key": "ed25519:GyEtJ2PAcJgkUMefgw5xHtsPZwSacji5UpT7BpzvPgcy",
+  "agent_key_permission": {
+    "nonce": 275879669000012,
+    "permission": {
+      "FunctionCall": {
+        "allowance": "244577004410249400000000",
+        "method_names": [
+          "pay"
+        ],
+        "receiver_id": "leash-vault-k21owo.testnet"
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "agent key: direct Transfer 0.001 NEAR to drainer (within allowance)",
+      "expect": "refused",
+      "outcome": "rejected by RPC (never included in a block)",
+      "error": "RequiresFullAccess: The transaction contains more then one action, but it was signed with an access key which allows transaction to apply only one specific action. To apply more then one actions TX must be signed with a full access key",
+      "ok": true
+    },
+    {
+      "name": "agent key: direct Transfer 1 NEAR to drainer",
+      "expect": "refused",
+      "outcome": "rejected by RPC (never included in a block)",
+      "error": "NotEnoughAllowance: Access Key {account_id}:{public_key} does not have enough balance 0.2463801514599504 for transaction costing 1.00024550081875",
+      "ok": true
+    },
+    {
+      "name": "agent key: AddKey (full access) on vault",
+      "expect": "refused",
+      "outcome": "rejected by RPC (never included in a block)",
+      "error": "RequiresFullAccess: The transaction contains more then one action, but it was signed with an access key which allows transaction to apply only one specific action. To apply more then one actions TX must be signed with a full access key",
+      "ok": true
+    },
+    {
+      "name": "agent key: DeleteKey (remove owner key)",
+      "expect": "refused",
+      "outcome": "rejected by RPC (never included in a block)",
+      "error": "RequiresFullAccess: The transaction contains more then one action, but it was signed with an access key which allows transaction to apply only one specific action. To apply more then one actions TX must be signed with a full access key",
+      "ok": true
+    },
+    {
+      "name": "agent key: call owner method set_policy",
+      "expect": "refused",
+      "outcome": "rejected by RPC (never included in a block)",
+      "error": "MethodNameMismatch: Transaction method name set_policy isn't allowed by the access key",
+      "ok": true
+    },
+    {
+      "name": "agent key: call pay on another contract (registry)",
+      "expect": "refused",
+      "outcome": "rejected by RPC (never included in a block)",
+      "error": "ReceiverMismatch: Wrong AccessKey used for transaction: transaction is sent to receiver_id=leash-registry-k21owo.testnet, but is signed with function call access key that restricted to only use with receiver_id=leash-vault-k21owo.testnet. Either change receiver_id in your transaction or switch to use a FullAccessKey.",
+      "ok": true
+    },
+    {
+      "name": "agent key: pay with 1 yocto attached deposit",
+      "expect": "refused",
+      "outcome": "rejected by RPC (never included in a block)",
+      "error": "DepositWithFunctionCall: {}",
+      "ok": true
+    },
+    {
+      "name": "pay 0.05 NEAR to trusted receiver",
+      "expect": "success",
+      "tx": "4vSK2ohAMLyWEVFHyYNGEivKLioHxGbo7owXoq4365tm",
+      "explorer": "https://testnet.nearblocks.io/txns/4vSK2ohAMLyWEVFHyYNGEivKLioHxGbo7owXoq4365tm",
+      "failure": null,
+      "logs": [
+        "SENT 0.05 NEAR to leash-dev-611136.testnet memo=api credits"
+      ],
+      "return": "{\"Sent\":{\"amount\":\"50000000000000000000000\"}}",
+      "outcome": "succeeded",
+      "ok": true
+    },
+    {
+      "name": "pay 0.05 NEAR to registry-flagged drainer",
+      "expect": "refused",
+      "tx": "4P1CFWar3XCBvdV4ZECE68PP3KwGQjobWRT8wxpGn3dE",
+      "explorer": "https://testnet.nearblocks.io/txns/4P1CFWar3XCBvdV4ZECE68PP3KwGQjobWRT8wxpGn3dE",
+      "failure": "{\"ActionError\":{\"index\":0,\"kind\":{\"FunctionCallError\":{\"ExecutionError\":\"Smart contract panicked: BLOCKED: receiver is flagged in the shared registry\"}}}}",
+      "logs": [],
+      "outcome": "failed on-chain",
+      "ok": true
+    },
+    {
+      "name": "pay 2 NEAR (over per-payment cap)",
+      "expect": "refused",
+      "tx": "DQoG8b38uXS3HhrYEG4sTrDFitN82SeoMAzp1MJrBYW5",
+      "explorer": "https://testnet.nearblocks.io/txns/DQoG8b38uXS3HhrYEG4sTrDFitN82SeoMAzp1MJrBYW5",
+      "failure": "{\"ActionError\":{\"index\":0,\"kind\":{\"FunctionCallError\":{\"ExecutionError\":\"Smart contract panicked: BLOCKED: amount exceeds per-payment cap\"}}}}",
+      "logs": [],
+      "outcome": "failed on-chain",
+      "ok": true
+    },
+    {
+      "name": "pay 0.1 NEAR to first-time receiver leash-registry-k21owo.testnet (queued)",
+      "expect": "success",
+      "tx": "9zmRr6Y1t6pdfvT2dKqKjndYC8AEm1STb339rWLwLTMu",
+      "explorer": "https://testnet.nearblocks.io/txns/9zmRr6Y1t6pdfvT2dKqKjndYC8AEm1STb339rWLwLTMu",
+      "failure": null,
+      "logs": [
+        "QUEUED id=1 reason=first payment to this receiver"
+      ],
+      "return": "{\"Queued\":{\"id\":1,\"reason\":\"first payment to this receiver\"}}",
+      "outcome": "succeeded",
+      "ok": true
+    },
+    {
+      "name": "owner approves pending id=1",
+      "expect": "success",
+      "tx": "CdCv7gbhFncB1X7HeGL8P1QbPd3SpKRd8sMtfQw9KnJA",
+      "explorer": "https://testnet.nearblocks.io/txns/CdCv7gbhFncB1X7HeGL8P1QbPd3SpKRd8sMtfQw9KnJA",
+      "failure": null,
+      "logs": [
+        "APPROVED id=1 SENT 0.1 NEAR to leash-registry-k21owo.testnet"
+      ],
+      "outcome": "succeeded",
+      "ok": true
+    }
+  ]
+}

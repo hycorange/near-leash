@@ -1,0 +1,22 @@
+{
+  "name": "leash-checker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Counterparty check for paying agents on NEAR: allow / warn / block with reasons",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "check": "node src/cli.ts",
+    "serve": "node src/server.ts",
+    "record": "node src/record.ts",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^5.9.3"
+  }
+}

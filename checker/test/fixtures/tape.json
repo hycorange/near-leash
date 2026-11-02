@@ -1,0 +1,146 @@
+{
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-registry-k21owo.testnet\",\"method_name\":\"get_status\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZHJhaW5lci1rMjFvd28udGVzdG5ldCJ9\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"CNnoh2w6L4EFYQ8R6LxXybqCqQZZ7guANp7Fs7HXfcrK\",\"block_height\":275880270,\"logs\":[],\"result\":[123,34,102,108,97,103,103,101,100,34,58,116,114,117,101,44,34,99,111,110,102,105,114,109,101,100,34,58,116,114,117,101,44,34,100,105,115,109,105,115,115,101,100,34,58,102,97,108,115,101,44,34,100,105,115,116,105,110,99,116,95,114,101,112,111,114,116,101,114,115,34,58,49,44,34,114,101,112,111,114,116,115,34,58,91,123,34,114,101,112,111,114,116,101,114,34,58,34,108,101,97,115,104,45,111,119,110,101,114,45,107,50,49,111,119,111,46,116,101,115,116,110,101,116,34,44,34,114,101,97,115,111,110,34,58,34,99,111,108,108,101,99,116,115,32,102,117,110,100,115,32,118,105,97,32,112,114,111,109,112,116,45,105,110,106,101,99,116,101,100,32,112,97,121,109,101,110,116,32,114,101,113,117,101,115,116,115,34,44,34,101,118,105,100,101,110,99,101,95,117,114,108,34,58,34,104,116,116,112,115,58,47,47,103,105,116,104,117,98,46,99,111,109,47,104,121,99,111,114,97,110,103,101,47,110,101,97,114,45,108,101,97,115,104,47,98,108,111,98,47,109,97,105,110,47,100,111,99,115,47,101,118,105,100,101,110,99,101,47,100,114,97,105,110,101,114,46,109,100,34,44,34,99,114,101,97,116,101,100,95,110,115,34,58,49,55,57,51,54,49,49,52,56,54,50,51,49,48,56,54,55,54,54,125,93,125]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_blocked\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZHJhaW5lci1rMjFvd28udGVzdG5ldCJ9\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"CNnoh2w6L4EFYQ8R6LxXybqCqQZZ7guANp7Fs7HXfcrK\",\"block_height\":275880270,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_known\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZHJhaW5lci1rMjFvd28udGVzdG5ldCJ9\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"CNnoh2w6L4EFYQ8R6LxXybqCqQZZ7guANp7Fs7HXfcrK\",\"block_height\":275880270,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"view_account\",\"account_id\":\"leash-drainer-k21owo.testnet\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"amount\":\"10000000000000000000000000\",\"block_hash\":\"CNnoh2w6L4EFYQ8R6LxXybqCqQZZ7guANp7Fs7HXfcrK\",\"block_height\":275880270,\"code_hash\":\"11111111111111111111111111111111\",\"locked\":\"0\",\"storage_paid_at\":0,\"storage_usage\":182},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"get_policy\",\"args_base64\":\"e30=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"C7qeNaJxgfHoohzXSBcC2HeLGYjFAe4aDuxiAcJp4gbT\",\"block_height\":275880285,\"logs\":[],\"result\":[123,34,112,101,114,95,112,97,121,109,101,110,116,95,99,97,112,34,58,34,49,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,34,44,34,100,97,105,108,121,95,98,117,100,103,101,116,34,58,34,51,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,34,44,34,114,101,118,105,101,119,95,97,98,111,118,101,34,58,34,53,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,34,44,34,114,101,118,105,101,119,95,110,101,119,95,114,101,99,101,105,118,101,114,115,34,58,116,114,117,101,125]},\"id\":\"leash\"}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-drainer-k21owo.testnet ": {
+  "status": 200,
+  "body": "{\"account\":[{\"block_height\":\"270420307\",\"block_hash\":\"6fvFJfveTFMvu1iwoWAqUQcjAG2JmXMiAJG6ocghQeeF\"}]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-drainer-k21owo.testnet/contract/deployments ": {
+  "status": 200,
+  "body": "{\"deployments\":[]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-drainer-k21owo.testnet/txns/count ": {
+  "status": 200,
+  "body": "{\"txns\":[{\"count\":\"0\"}]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-dev-611136.testnet/contract/deployments ": {
+  "status": 200,
+  "body": "{\"deployments\":[]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-dev-611136.testnet ": {
+  "status": 200,
+  "body": "{\"account\":[{\"block_height\":\"270420307\",\"block_hash\":\"6fvFJfveTFMvu1iwoWAqUQcjAG2JmXMiAJG6ocghQeeF\"}]}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_blocked\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZGV2LTYxMTEzNi50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"C7qeNaJxgfHoohzXSBcC2HeLGYjFAe4aDuxiAcJp4gbT\",\"block_height\":275880285,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-registry-k21owo.testnet\",\"method_name\":\"get_status\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZGV2LTYxMTEzNi50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"C7qeNaJxgfHoohzXSBcC2HeLGYjFAe4aDuxiAcJp4gbT\",\"block_height\":275880285,\"logs\":[],\"result\":[123,34,102,108,97,103,103,101,100,34,58,102,97,108,115,101,44,34,99,111,110,102,105,114,109,101,100,34,58,102,97,108,115,101,44,34,100,105,115,109,105,115,115,101,100,34,58,102,97,108,115,101,44,34,100,105,115,116,105,110,99,116,95,114,101,112,111,114,116,101,114,115,34,58,48,44,34,114,101,112,111,114,116,115,34,58,91,93,125]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_known\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZGV2LTYxMTEzNi50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"C7qeNaJxgfHoohzXSBcC2HeLGYjFAe4aDuxiAcJp4gbT\",\"block_height\":275880285,\"logs\":[],\"result\":[116,114,117,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"view_account\",\"account_id\":\"leash-dev-611136.testnet\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"amount\":\"10148627353852521900000000\",\"block_hash\":\"C7qeNaJxgfHoohzXSBcC2HeLGYjFAe4aDuxiAcJp4gbT\",\"block_height\":275880285,\"code_hash\":\"7SkQ9TtVNCTnh1hUMnfohx1XDV1XsPYxE9fex7A6J4EF\",\"locked\":\"0\",\"storage_paid_at\":0,\"storage_usage\":165049},\"id\":\"leash\"}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-dev-611136.testnet/txns/count ": {
+  "status": 200,
+  "body": "{\"txns\":[{\"count\":\"0\"}]}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_blocked\",\"args_base64\":\"eyJhY2NvdW50Ijoid3JhcC50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"8qdBGFF5ToNz1h1UXovYooaXKwzAqrCVGEFixZo9C8n2\",\"block_height\":275880276,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"view_account\",\"account_id\":\"wrap.testnet\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"amount\":\"127310646061302200755882112085123\",\"block_hash\":\"8qdBGFF5ToNz1h1UXovYooaXKwzAqrCVGEFixZo9C8n2\",\"block_height\":275880276,\"code_hash\":\"DsbyUrKaSJAT91Pewfi71QExPLBooDp1z4sL9GUDhNHa\",\"locked\":\"0\",\"storage_paid_at\":0,\"storage_usage\":20902579},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_known\",\"args_base64\":\"eyJhY2NvdW50Ijoid3JhcC50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"8qdBGFF5ToNz1h1UXovYooaXKwzAqrCVGEFixZo9C8n2\",\"block_height\":275880276,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-registry-k21owo.testnet\",\"method_name\":\"get_status\",\"args_base64\":\"eyJhY2NvdW50Ijoid3JhcC50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"8qdBGFF5ToNz1h1UXovYooaXKwzAqrCVGEFixZo9C8n2\",\"block_height\":275880276,\"logs\":[],\"result\":[123,34,102,108,97,103,103,101,100,34,58,102,97,108,115,101,44,34,99,111,110,102,105,114,109,101,100,34,58,102,97,108,115,101,44,34,100,105,115,109,105,115,115,101,100,34,58,102,97,108,115,101,44,34,100,105,115,116,105,110,99,116,95,114,101,112,111,114,116,101,114,115,34,58,48,44,34,114,101,112,111,114,116,115,34,58,91,93,125]},\"id\":\"leash\"}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/wrap.testnet/txns/count ": {
+  "status": 200,
+  "body": "{\"txns\":[{\"cost\":\"13290708.11\",\"count\":\"6106205\"}]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/wrap.testnet/contract/deployments ": {
+  "status": 200,
+  "body": "{\"deployments\":[{\"transaction_hash\":\"FMy4RNKH4PKCaNgF1ksoMXqLaczNs2ziuwYK7uZZUKAG\",\"block_timestamp\":\"1650301989569494265\",\"receipt_predecessor_account_id\":\"wrap.testnet\"},{\"transaction_hash\":\"BzRAXnpYxqb5qePJgAj4GcGnEYZ7cX2NJw4rMJmHXDrg\",\"block_timestamp\":\"1618619854218645925\",\"receipt_predecessor_account_id\":\"wrap.testnet\"}]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/wrap.testnet ": {
+  "status": 200,
+  "body": "{\"account\":[{\"account_id\":\"wrap.testnet\",\"created\":{\"transaction_hash\":\"9noFqe2r3ViBvDTz2qFMyY1WGjJq9vgMLAiXMxNdS7Nn\",\"block_timestamp\":1618602611653887000},\"deleted\":{\"transaction_hash\":null,\"block_timestamp\":null},\"amount\":\"127564465082055171562801584664696\",\"block_hash\":\"6fvFJfveTFMvu1iwoWAqUQcjAG2JmXMiAJG6ocghQeeF\",\"block_height\":\"270420307\",\"locked\":\"0\"}]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-dev-61l136.testnet/contract/deployments ": {
+  "status": 200,
+  "body": "{\"deployments\":[]}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-dev-61l136.testnet ": {
+  "status": 200,
+  "body": "{\"account\":[{\"block_height\":\"270420307\",\"block_hash\":\"6fvFJfveTFMvu1iwoWAqUQcjAG2JmXMiAJG6ocghQeeF\"}]}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_known\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZGV2LTYxbDEzNi50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"cJDuKS2jWRdvwaoR6EFsarpH269nH3bZhXRmcxWQPUy\",\"block_height\":275880279,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_blocked\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZGV2LTYxbDEzNi50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"cJDuKS2jWRdvwaoR6EFsarpH269nH3bZhXRmcxWQPUy\",\"block_height\":275880279,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-registry-k21owo.testnet\",\"method_name\":\"get_status\",\"args_base64\":\"eyJhY2NvdW50IjoibGVhc2gtZGV2LTYxbDEzNi50ZXN0bmV0In0=\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"cJDuKS2jWRdvwaoR6EFsarpH269nH3bZhXRmcxWQPUy\",\"block_height\":275880279,\"logs\":[],\"result\":[123,34,102,108,97,103,103,101,100,34,58,102,97,108,115,101,44,34,99,111,110,102,105,114,109,101,100,34,58,102,97,108,115,101,44,34,100,105,115,109,105,115,115,101,100,34,58,102,97,108,115,101,44,34,100,105,115,116,105,110,99,116,95,114,101,112,111,114,116,101,114,115,34,58,48,44,34,114,101,112,111,114,116,115,34,58,91,93,125]},\"id\":\"leash\"}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/leash-dev-61l136.testnet/txns/count ": {
+  "status": 200,
+  "body": "{\"txns\":[{\"count\":\"0\"}]}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"view_account\",\"account_id\":\"leash-dev-61l136.testnet\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"error\":{\"name\":\"HANDLER_ERROR\",\"cause\":{\"info\":{\"block_hash\":\"8TPrcqriHeDugkv4MwXL6j6fjGfdF1i7ABUbRvCNESCL\",\"block_height\":275880280,\"requested_account_id\":\"leash-dev-61l136.testnet\"},\"name\":\"UNKNOWN_ACCOUNT\"},\"code\":-32000,\"message\":\"Server error\",\"data\":\"account leash-dev-61l136.testnet does not exist while viewing\"},\"id\":\"leash\"}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/no-such-account-leash-7q.testnet ": {
+  "status": 200,
+  "body": "{\"account\":[{\"block_height\":\"270420307\",\"block_hash\":\"6fvFJfveTFMvu1iwoWAqUQcjAG2JmXMiAJG6ocghQeeF\"}]}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_known\",\"args_base64\":\"eyJhY2NvdW50Ijoibm8tc3VjaC1hY2NvdW50LWxlYXNoLTdxLnRlc3RuZXQifQ==\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"5cDaYGwUbssnn2nHu5NRGxXCwPSEeG6Lcebj3UcTtpc5\",\"block_height\":275880282,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/no-such-account-leash-7q.testnet/contract/deployments ": {
+  "status": 200,
+  "body": "{\"deployments\":[]}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"view_account\",\"account_id\":\"no-such-account-leash-7q.testnet\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"error\":{\"name\":\"HANDLER_ERROR\",\"cause\":{\"info\":{\"block_hash\":\"5cDaYGwUbssnn2nHu5NRGxXCwPSEeG6Lcebj3UcTtpc5\",\"block_height\":275880282,\"requested_account_id\":\"no-such-account-leash-7q.testnet\"},\"name\":\"UNKNOWN_ACCOUNT\"},\"code\":-32000,\"message\":\"Server error\",\"data\":\"account no-such-account-leash-7q.testnet does not exist while viewing\"},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-registry-k21owo.testnet\",\"method_name\":\"get_status\",\"args_base64\":\"eyJhY2NvdW50Ijoibm8tc3VjaC1hY2NvdW50LWxlYXNoLTdxLnRlc3RuZXQifQ==\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"5cDaYGwUbssnn2nHu5NRGxXCwPSEeG6Lcebj3UcTtpc5\",\"block_height\":275880282,\"logs\":[],\"result\":[123,34,102,108,97,103,103,101,100,34,58,102,97,108,115,101,44,34,99,111,110,102,105,114,109,101,100,34,58,102,97,108,115,101,44,34,100,105,115,109,105,115,115,101,100,34,58,102,97,108,115,101,44,34,100,105,115,116,105,110,99,116,95,114,101,112,111,114,116,101,114,115,34,58,48,44,34,114,101,112,111,114,116,115,34,58,91,93,125]},\"id\":\"leash\"}"
+ },
+ "POST https://rpc.testnet.fastnear.com {\"jsonrpc\":\"2.0\",\"id\":\"leash\",\"method\":\"query\",\"params\":{\"finality\":\"final\",\"request_type\":\"call_function\",\"account_id\":\"leash-vault-k21owo.testnet\",\"method_name\":\"is_blocked\",\"args_base64\":\"eyJhY2NvdW50Ijoibm8tc3VjaC1hY2NvdW50LWxlYXNoLTdxLnRlc3RuZXQifQ==\"}}": {
+  "status": 200,
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"block_hash\":\"5cDaYGwUbssnn2nHu5NRGxXCwPSEeG6Lcebj3UcTtpc5\",\"block_height\":275880282,\"logs\":[],\"result\":[102,97,108,115,101]},\"id\":\"leash\"}"
+ },
+ "GET https://api-testnet.nearblocks.io/v1/account/no-such-account-leash-7q.testnet/txns/count ": {
+  "status": 200,
+  "body": "{\"txns\":[{\"count\":\"0\"}]}"
+ }
+}
