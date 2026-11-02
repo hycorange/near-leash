@@ -1,0 +1,115 @@
+{
+  "when": "2026-11-02T09:48:58.588Z",
+  "vault": "leash-vault-k21owo.testnet",
+  "explorer": "https://testnet.nearblocks.io/txns/",
+  "partA": [
+    {
+      "request": {
+        "amount_near": "0.05",
+        "receiver": "leash-dev-611136.testnet",
+        "memo": "weather api credits",
+        "source": "vendor-invoice.md"
+      },
+      "decision": "submitted",
+      "check": {
+        "verdict": "warn",
+        "score": 25,
+        "reasons": [
+          {
+            "code": "not_indexed",
+            "severity": "warn",
+            "detail": "indexer has no history for this account (very new or unused)"
+          }
+        ]
+      },
+      "chain": {
+        "tx": "DgEYAsFia8RpA6XvWBiFmbLbiPTWvEe4eZnngShpTDpX",
+        "ok": true,
+        "outcome": "sent",
+        "detail": "{\"Sent\":{\"amount\":\"50000000000000000000000\"}}"
+      }
+    },
+    {
+      "request": {
+        "amount_near": "0.5",
+        "receiver": "leash-drainer-k21owo.testnet",
+        "memo": "account verification",
+        "source": "forum-post-injected.html"
+      },
+      "decision": "refused",
+      "check": {
+        "verdict": "block",
+        "score": 100,
+        "reasons": [
+          {
+            "code": "registry_flagged",
+            "severity": "block",
+            "detail": "flagged in shared registry (curator-confirmed): collects funds via prompt-injected payment requests"
+          },
+          {
+            "code": "first_payment",
+            "severity": "warn",
+            "detail": "this vault has never paid this receiver"
+          },
+          {
+            "code": "not_indexed",
+            "severity": "warn",
+            "detail": "indexer has no history for this account (very new or unused)"
+          }
+        ]
+      },
+      "chain": null
+    },
+    {
+      "request": {
+        "amount_near": "0.05",
+        "receiver": "leash-dev-61l136.testnet",
+        "memo": "weather api credits",
+        "source": "lookalike-invoice.md"
+      },
+      "decision": "refused",
+      "check": {
+        "verdict": "block",
+        "score": 100,
+        "reasons": [
+          {
+            "code": "first_payment",
+            "severity": "warn",
+            "detail": "this vault has never paid this receiver"
+          },
+          {
+            "code": "account_missing",
+            "severity": "block",
+            "detail": "named account does not exist; the transfer would fail or be refunded"
+          },
+          {
+            "code": "lookalike",
+            "severity": "block",
+            "detail": "name looks like trusted receiver \"leash-dev-611136.testnet\" but is different"
+          }
+        ]
+      },
+      "chain": null
+    }
+  ],
+  "partB": {
+    "bypass_pay_to_drainer": {
+      "tx": "7wdGjqywh499FXkJN55AP44qvMjceZbRbrJSrSwux4o2",
+      "ok": false,
+      "outcome": "failed",
+      "detail": "contract refused: BLOCKED: receiver is flagged in the shared registry"
+    },
+    "direct_transfer": {
+      "tx": null,
+      "ok": false,
+      "outcome": "rejected",
+      "detail": "network rejected before inclusion: RequiresFullAccess"
+    },
+    "over_cap_to_trusted": {
+      "tx": "EBCrTsr8oSCogtDicarZPzQgyq5yyTGmhavUvgJTGkyf",
+      "ok": false,
+      "outcome": "failed",
+      "detail": "contract refused: BLOCKED: amount exceeds per-payment cap"
+    }
+  }
+}
