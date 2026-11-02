@@ -33,6 +33,8 @@ drain it.
    the vault's keys and flagged accounts. Owner actions are shown as `near` CLI commands. The page never
    handles keys.
 
+**Live dashboard:** https://hycorange.github.io/near-leash/ · **Demo video (88 s):** [leash-demo.mp4](https://github.com/hycorange/near-leash/releases/download/v0.1.0-demo/leash-demo.mp4)
+
 ## Try it: what judges can check in 2 minutes (no install)
 
 | Do | See |
@@ -40,7 +42,7 @@ drain it.
 | Open [docs/ATTACK-DEMO.md](docs/ATTACK-DEMO.md) | The prompt-injected agent is stopped by the checker. With the wallet bypassed, the contract still refuses (testnet tx links) |
 | Open [docs/TESTNET-RESULTS.md](docs/TESTNET-RESULTS.md) | Every action the agent key can't do, with the RPC error, plus the policy txs |
 | `curl` the registry (below) | `leash-drainer-k21owo.testnet` is flagged, with its reason and evidence URL |
-| Open `web/index.html` via any static server | Live dashboard ([screenshot](docs/dashboard.png)) |
+| Open https://hycorange.github.io/near-leash/ | Live dashboard on testnet: policy, budget, a queued payment with its approve command, flagged accounts ([screenshot](docs/dashboard.png)) |
 | Open [docs/REPRO-CHECK.md](docs/REPRO-CHECK.md) | Results of a clean-clone run of every step below |
 
 ```sh
