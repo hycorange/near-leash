@@ -22,3 +22,7 @@ Covered:
 
 Note: agent calls use 100 Tgas, not `max_gas()`. 1 PGas of prepaid gas costs about 1 NEAR, which is more
 than the agent key's 0.25 NEAR allowance, so the node rejects the transaction with `NotEnoughAllowance`.
+
+Don't run these under a virtual-memory cap such as `prlimit --as` or `ulimit -v`. The sandbox node
+reserves a large address space, dies on start, and every test then fails with
+`error sending request for url (http://127.0.0.1:…)`.

@@ -41,6 +41,7 @@ drain it.
 | Open [docs/TESTNET-RESULTS.md](docs/TESTNET-RESULTS.md) | Every action the agent key can't do, with the RPC error, plus the policy txs |
 | `curl` the registry (below) | `leash-drainer-k21owo.testnet` is flagged, with its reason and evidence URL |
 | Open `web/index.html` via any static server | Live dashboard ([screenshot](docs/dashboard.png)) |
+| Open [docs/REPRO-CHECK.md](docs/REPRO-CHECK.md) | Results of a clean-clone run of every step below |
 
 ```sh
 curl -s https://rpc.testnet.fastnear.com -H 'content-type: application/json' -d '{"jsonrpc":"2.0","id":1,"method":"query","params":{"request_type":"call_function","finality":"final","account_id":"leash-registry-k21owo.testnet","method_name":"get_status","args_base64":"'$(printf '{"account":"leash-drainer-k21owo.testnet"}' | base64 -w0)'"}}' \
